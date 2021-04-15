@@ -402,12 +402,12 @@ function misc() {
         , "showImages": false
         , "lang": 'en'
     };
-    twitterFetcher.fetch(configProfile);
+    // twitterFetcher.fetch(configProfile);
     //counter    
-    jQuery('.count').counterUp({
-        delay: 10
-        , time: 1000
-    });
+    // jQuery('.count').counterUp({
+    //     delay: 10
+    //     , time: 1000
+    // });
     //layout actions    
     jQuery('.panel-heading a').on("click", function () {
         jQuery('.panel-heading').removeClass('actives');

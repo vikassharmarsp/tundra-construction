@@ -74,14 +74,14 @@ body::-webkit-scrollbar {
     overflow-x: hidden!important;
 }
 
-body {
-    font-family: 'Lato', sans-serif;
+body {    
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #8f8f8f;
 }
 
 p {
-    font-family: "Lato", sans-serif;
+    /* font-family: "Lato", sans-serif; */
     font-size: 14px;
     font-weight: 400;
     color: #8F8F8F;
@@ -95,7 +95,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Oswald";
+    /* font-family: "Oswald"; */
     font-weight: 400;
     margin: 0;
     color: #222;
@@ -757,7 +757,7 @@ nav.navigation-10.navbar-default {
 
 .dropdown-menu>li a,
 .mega-dropdown-menu > li > ul > li > a {
-    font-family: 'Lato';
+    /* font-family: 'Lato'; */
     color: #222;
     letter-spacing: 0.01em;
     font-weight: 400;
@@ -861,7 +861,7 @@ nav.navigation-10.navbar-default {
     padding: 5px 60px 5px 0px;
     line-height: 30px;
     font-weight: 400;
-    font-family: 'Oswald';
+    /* font-family: 'Oswald'; */
     font-size: 16px;
     letter-spacing: 0.01em;
     position: relative;
@@ -898,7 +898,7 @@ ul.dropdown-menu.mega-dropdown-menu {
 @media screen and (min-width: 992px) {
     .x-caret:before {
         content: "\203A";
-        font-family: monospace, tahoma;
+        /* font-family: monospace, tahoma; */
         display: inline-block;
         color: #666;
         font-size: 16px;
@@ -909,7 +909,7 @@ ul.dropdown-menu.mega-dropdown-menu {
     }
     .y-caret:before {
         content: "\203A";
-        font-family: monospace, tahoma;
+        font-fam/ily: monospace, tahoma;
         display: inline-block;
         color: #666;
         font-size: 16px;
@@ -1230,7 +1230,7 @@ header.header-5 .navbar.easy-sidebar .burger-menu:before {
     border-top-width: 2px;
     border-top-style: solid;
     padding: 0;
-    font-family: 'Lato';
+    /* font-family: 'Lato'; */
     line-height: 2em
 }
 
@@ -1551,7 +1551,7 @@ header-2 >.container {
 
 .header-3 .main-menu-custom-text>span {
     font-size: 34px;
-    font-family: 'Oswald';
+    /* font-family: 'Oswald'; */
     font-weight: bold;
     display: inline-block;
     vertical-align: middle;
@@ -2341,7 +2341,7 @@ ul.vertical-images li:hover .button {
 .darnalargetext {
     color: #ffffff;
     font-weight: 400;
-    font-family: Oswald;
+    /* font-family: Oswald; */
     text-decoration: none;
     background-color: transparent;
     border-width: 0px;
@@ -2356,7 +2356,7 @@ ul.vertical-images li:hover .button {
 .tp-caption.darnasmalltext,
 .darnasmalltext {
     color: #ffffff;
-    font-family: Lato;
+    /* font-family: Lato; */
     background-color: transparent;
     text-decoration: none;
     border-width: 0px;
@@ -2369,7 +2369,7 @@ ul.vertical-images li:hover .button {
 
 .tp-caption.darnaverylargetextprimary,
 .darnaverylargetextprimary {
-    font-family: Oswald;
+    /* font-family: Oswald; */
     background-color: transparent;
     text-decoration: none;
     border-width: 0px;
@@ -2383,7 +2383,7 @@ ul.vertical-images li:hover .button {
 .tp-caption.darnaverylargetext,
 .darnaverylargetext {
     color: #ffffff;
-    font-family: Oswald;
+    /* font-family: Oswald; */
     background-color: transparent;
     text-decoration: none;
     border-width: 0px;
@@ -2397,7 +2397,7 @@ ul.vertical-images li:hover .button {
 .tp-caption.darnamediumtext,
 .darnamediumtext {
     color: #ffffff;
-    font-family: Lato;
+    /* font-family: Lato; */
     text-decoration: none;
     background-color: transparent;
     border-width: 0px;
@@ -2410,7 +2410,7 @@ ul.vertical-images li:hover .button {
 
 .tp-caption.darnalargeprimarybg,
 .darnalargeprimarybg {
-    font-family: Oswald;
+    /* font-family: Oswald; */
     color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 15px 20px;
@@ -2424,7 +2424,7 @@ ul.vertical-images li:hover .button {
 .tp-caption.darnasmalltext2,
 .darnasmalltext2 {
     color: #ffffff;
-    font-family: Lato;
+    /* font-family: Lato; */
     text-decoration: none;
     background-color: transparent;
     border-width: 0px;
@@ -2534,7 +2534,7 @@ ul.vertical-images li:hover .button {
 }
 
 .slider-2-buttons .tparrows:before {
-    font-family: "revicons";
+    /* font-family: "revicons"; */
     color: #fff;
     display: block;
     text-align: center;
@@ -3510,14 +3510,14 @@ ul.vertical-images li:hover .button {
 /* -----------------------------------------------------------------------------COUNTER ------------------ */
 
 .counter-box-info .count {
-    font-family: Oswald;
+    /* font-family: Oswald; */
     font-size: 60px;
     font-weight: bold;
     line-height: 1;
 }
 
 .counter-box-info p {
-    font-family: "Oswald";
+    /* font-family: "Oswald"; */
     font-size: 18px;
     font-weight: 400;
     color: #FFF;
@@ -5059,7 +5059,7 @@ ul.breadcrumbs li span {
     height: 80px;
     background: #222;
     overflow: hidden;
-    font-family: monospace;
+    /* font-family: monospace; */
     font-size: 12px;
     background-image: none;
     -o-box-shadow: none;
@@ -5856,7 +5856,7 @@ ul.breadcrumbs li span {
 
 .sidebar .widget-text-intro {
     font-size: 30px;
-    font-family: Oswald;
+    /* font-family: Oswald; */
     text-align: center;
     border: dashed 3px #c5c5c5;
     padding: 55px 10px;
@@ -5931,7 +5931,7 @@ h4.widget-title:after {
     cursor: pointer;
     color: #fff;
     font-size: 32px;
-    font-family: 'Varela Round', sans-serif;
+    /* font-family: 'Varela Round', sans-serif; */
     -webkit-transition: color 0.3s ease-in;
     -moz-transition: color 0.3s ease-in;
     xآ²-o-transition: color 0.3s ease-in;
@@ -5943,7 +5943,7 @@ h4.widget-title:after {
 }
 
 .wcd-tuto {
-    font-family: 'Varela Round', sans-serif;
+    /* font-family: 'Varela Round', sans-serif; */
     color: #fff;
     font-size: 16px;
     line-height: 36px;
@@ -6307,7 +6307,7 @@ a.product-name {
 /* -----------------------------------------------------------------------------SHOPCART ------------------ */
 
 .shopcart-table thead>tr>th {
-    font-family: 'Oswald';
+    /* font-family: 'Oswald'; */
     font-size: 16px;
     letter-spacing: 0.02em;
     line-height: 20px;
@@ -6807,7 +6807,7 @@ table.shop_table.cart {
 }
 
 table.shop_table.cart thead th {
-    font-family: 'Oswald';
+    /* font-family: 'Oswald'; */
     font-size: 16px;
     letter-spacing: 0.02em;
     line-height: 20px;
@@ -7387,7 +7387,7 @@ table.shop_table.customer_details td {
 }
 
 .primary-font {
-    font-family: 'Lato';
+    /* font-family: 'Lato'; */
 }
 
 .navbar.easy-sidebar .navbar-collapse {
@@ -7585,7 +7585,7 @@ a.about_paypal {
 
 .widget-posts-wrap .price {
     text-align: left;
-    font-family: Lato;
+    /* font-family: Lato; */
     font-style: normal;
     font-size: 16px;
 }
@@ -7684,7 +7684,7 @@ footer {
 .footer-widget {}
 
 .footer-widget h5 {
-    font-family: Lato;
+    /* font-family: Lato; */
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.02em;
