@@ -21,14 +21,14 @@ if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message']
     $sent = mail($email_to, $subject, $msg, $headers) ; 
 
     if($sent) {
-        header("location: http://www.tundra-construction.herokuapp.com");
+        header("location: https://tundra-construction.herokuapp.com");
         exit();
     } else {
-        header("location: http://www.tundra-construction.herokuapp.com/contact.html");
+        header("location: https://tundra-construction.herokuapp.com/contact.html");
         exit();
     }
 }else{
-    header("location: http://www.tundra-construction.herokuapp.com/about.html");
+    header("location: https://tundra-construction.herokuapp.com/about.html");
     exit();
 }
 ?>
