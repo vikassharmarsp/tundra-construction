@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <html>
-<!-- [if IE 8]>			<html class="ie ie8"> <![endif]-->
-<!-- [if IE 9]>			<html class="ie ie9"> <![endif]-->
-<!-- [if gt IE 9]><html> <![endif] -->
-
-
-<!-- Mirrored from miraclestudio.design/html/darna/home_5.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Mar 2021 09:33:56 GMT -->
-
 <head>
     <!-- Meta -->
     <meta charset="utf-8">
@@ -160,8 +153,48 @@
             </div>
         </div>
     </div>
-    <div class="contact-form" style="background-color:#f8f8f8;">
-        <form method="POST" enctype="multipart/form-data" id="contact-form" class="contact-form">
+    <div class="container" style="background-color:#f8f8f8;">
+        <form id="contact-form" class="contact-form style-five" action="/mailServer/contact.php" method="POST" novalidate>
+            <div class="row clearfix">
+                <div class="col-md-6 column">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input name="name" autocomplete="off" class="form-control" value="" placeholder="Your Name" required type="text">
+                    </div>
+                </div>
+                <div class="col-md-6 column">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input name="email" autocomplete="off" class="form-control required email" value="" placeholder="Your Email" required type="email">
+                    </div>
+                </div>
+                <div class="col-md-6 column">
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input name="phone" autocomplete="off" class="form-control" value="" placeholder="Your Phone" type="text">
+                    </div>
+                </div>
+                <div class="col-md-6 column">
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input name="subject" autocomplete="off" class="form-control" value="" placeholder="Subject" type="text">
+                    </div>
+                </div>
+                <div class="col-md-12 column">
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" class="form-control textarea required" placeholder="Your Message Goes Here...."></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-section-btn">
+                <div class="form-group style-two">
+                    <input id="form_botcheck" name="form_botcheck" class="form-control" value="" type="hidden">
+                    <button class="bttn" type="submit" data-loading-text="Please wait..." style="background-color:#d60303;border-radius:4px;">Send</button>
+                </div>
+            </div>
+        </form>
+        <!-- <form method="POST" enctype="multipart/form-data" id="contact-form" class="contact-form" action="/mailServer/contact.php">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -200,7 +233,7 @@
                     </div>
                 </div>
             </div>
-        </form>
+        </form> -->
     </div>
 
     <!-- <div class="clients">
