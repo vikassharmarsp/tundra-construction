@@ -1,6 +1,6 @@
 <?php 
 header('Access-Control-Allow-Origin: *');  
-$email_to = 'sumeet.sharmajmu@gmail.com';
+$email_to = 'info@tundraconstructionllc.com';
 
 if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message'])){   
     $host = "relay-hosting.secureserver.net";
@@ -21,14 +21,14 @@ if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message']
     $sent = mail($email_to, $subject, $msg, $headers) ; 
 
     if($sent) {
-        header("location: http://tundraconstructionllc.com");
+        header("location: https://tundraconstructionllc.com");
         exit();
     } else {
-        header("location: http://tundraconstructionllc.com/contact.html");
+        header("location: https://tundraconstructionllc.com/contact.html");
         exit();
     }
 }else{
-    header("location: http://tundraconstructionllc.com/about.html");
+    header("location: https://tundraconstructionllc.com/about.html");
     exit();
 }
 ?>
