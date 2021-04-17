@@ -889,7 +889,7 @@ ul.dropdown-menu.mega-dropdown-menu {
     padding: 40px 0px;
     height: 100px;
     font-family: 'Roboto';
-    font-size: 14px;
+    font-size: 1.5rem;
     color: #000;
     letter-spacing: 0.14px;
     margin-right: 20px;
@@ -2169,7 +2169,25 @@ ul.vertical-images li:hover .button {
     background: #aaa;
     max-height: 700px;
     overflow: hidden;
-    width: 100%
+    width: 100%;
+}
+
+.singleSlider {
+    background: #aaa;
+    max-height: 700px;
+    overflow: hidden;
+    width: 100%;
+    display: none;
+}
+.singleSliderText {
+    font-size: 2em !important;
+    position: fixed;
+    top: 24%;
+    left: 8%;
+    color: white !important;
+    background-color: rgba(255, 182, 0, 100.00);
+    padding: 4%;
+    border-radius: 12px;
 }
 
 .home-about {
@@ -3056,6 +3074,12 @@ ul.vertical-images li:hover .button {
 }
 
 @media screen and (max-width: 600px) {
+    .singleSlider {
+        display: block;
+    }
+    .slider {
+        display: none;
+    }
     .project-overlay {
         zoom: 0.5;
     }
