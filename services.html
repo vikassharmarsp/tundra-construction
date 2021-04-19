@@ -21,11 +21,21 @@
     <link href="assets/js/pp/css/prettyPhoto.css" media="screen" rel="stylesheet" type="text/css">
     <!-- Main CSS -->
     <link href="assets/css/style.css" media="screen" rel="stylesheet" type="text/css">
+
     <style>
         p {
             font-size: 1.2em !important;
         }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                $("#readmore").show();
+                $(".btn1").hide();
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -79,7 +89,7 @@
                       -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
                 <a class="navbar-brand" href="index.html">
                     <img src="assets/images/logo1.png" alt="" style="width: 100%; margin-top: 5%;"></a>
-                    <h3>Veteran Owned Business</h3>
+                <h3>Veteran Owned Business</h3>
                 <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                       LOGO END
                       -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
@@ -122,7 +132,8 @@
         <div class="container">
             <div class="content-head text-center text-uppercase">
                 <h4>What we offer</h4>
-                <h5>Always Dedicated and Devoted</h5>
+                <h3>
+                    We are Licensed, Bonded and Insured</h3>
             </div>
             <div class="row zoom service-row">
                 <div class="col-md-3 col-sm-3">
@@ -151,10 +162,23 @@
                         <h3>Foundation Repairs</h3>
                         <p>We understand the geology of DFW area’s clay soil and the board range of problems it can
                             cause. Our experts have the skills, knowledge and resources required to address your
-                            foundation problems. Our Secure-Lock foundation repair procedure means your foundation is
-                            good for forever. One time for you, The whole life for us ! Foundation repair with life time
-                            transferable warranty.
+                            foundation problems. Our Secure-Lock foundation repair procedure means your foundation
+                            is good for forever. One time for you, The whole life for us! Foundation repair with
+                            lifetime transferable warranty. <button class="btn1">Readmore</button></p>
+
+
+                        <p id="readmore" style="display: none;">Normal procedure starts with your call to schedule no
+                            obligation free foundation
+                            inspection. We visit your home and evaluate your foundation. We provide you tentative
+                            plan for foundation repair if your foundation needs repair. Then we hire 3rd party
+                            structural engineer who inspects your foundation and provides final pier plan for
+                            foundation repair. We pull the permit from your city and implement the foundation
+                            repairs as per the plan provided by structural engineer. Engineer inspects our work and
+                            provides the “Engineer Report” with final readings for your foundation. We issue
+                            lifetime transferable warranty certificate after you make your final payment. Now your
+                            foundation is good for FOREVER!!
                         </p>
+
                     </div>
                 </div>
             </div>
@@ -346,21 +370,23 @@ overlay div start
         <!-- -- -- -- -
 overlay div end
 -- -- -- -- -->
-         <!-- jquery -->
-    <script src="assets/js/jquery.js"></script>
-    <!-- bootstrap -->
-    <script src="assets/js/bootstrap.min.js"></script>   
+        <!-- jquery -->
+        <script src="assets/js/jquery.js"></script>
+        <!-- bootstrap -->
+        <script src="assets/js/bootstrap.min.js"></script>
 
-    <!-- cookie js -->
-    <script src="assets/js/jquery.cookie.js"></script>
-    <!-- pretty Photo -->
-    <script src="assets/js/pp/js/jquery.prettyPhoto.js"></script>
+        <!-- cookie js -->
+        <script src="assets/js/jquery.cookie.js"></script>
+        <!-- pretty Photo -->
+        <script src="assets/js/pp/js/jquery.prettyPhoto.js"></script>
 
-    <!-- jquery-ui.min -->
-    <script src="assets/js/jquery-ui.min.js"></script>
-    
-    <!-- Main Javascript -->
-    <script src="assets/js/main.js"></script>
+        <!-- jquery-ui.min -->
+        <script src="assets/js/jquery-ui.min.js"></script>
+
+        <!-- Main Javascript -->
+        <script src="assets/js/main.js"></script>
+
+
         <style>
             .img-responsive {
                 width: 90%;
@@ -384,9 +410,37 @@ overlay div end
 
             h3 {
                 font-size: 2em;
-                color: #FFB600;
+                color: #ffb600;
                 font-weight: 600;
                 margin-bottom: 2%;
+            }
+
+            /* The Close Button */
+            .close {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .btn1 {
+                color: white;
+                padding: 1px 2px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 10px;
+                margin: 1px 1px;
+                cursor: pointer;
+                color: black;
+                border: 1px solid #ffb600;
             }
         </style>
 </body>
