@@ -974,7 +974,7 @@ header .collapse.in {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #000;
+    color: #FFB600;
     font-size: 36px;
     position: relative;
     /* right: 29px;*/
@@ -1034,13 +1034,13 @@ header .collapse.in {
 
 header .navbar.easy-sidebar .burger-menu:before,
 header.header-4 .navbar.easy-sidebar .burger-menu:before {
-    color: #222;
+    color: #FFB600;
 }
 
 header.header-2 .navbar.easy-sidebar .burger-menu:before,
 header.header-3 .navbar.easy-sidebar .burger-menu:before,
 header.header-5 .navbar.easy-sidebar .burger-menu:before {
-    color: #fff;
+    color: #222;
 }
 
 .header-3.shrink.sticky-header {
@@ -1795,7 +1795,7 @@ header-2 >.container {
 }
 
 .header-5 .navbar.easy-sidebar #navbar {
-    background: rgba(56, 59, 62, 0.92);
+    background: #FFF;
 }
 
 .header-5 .burger-menu span {
@@ -1811,7 +1811,7 @@ header-2 >.container {
 
 .header-5 h3 {
     color: #FFB600 !important;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
     font-size: 1.3em !important;
 }
 
@@ -3087,9 +3087,16 @@ ul.vertical-images li:hover .button {
 }
 
 @media screen and (max-width: 600px) {
-    .container {
-        padding: 0 !important;
+    .page-head h1 {
+        margin-top: 12% !important;
     }
+    .header-5 .navbar-default .navbar-nav>li>a,
+.header-5 .navbar-default .x-caret:before {
+    color: #222
+}
+.header-5 h3 {
+    display: none;
+}
     .singleSlider {
         display: block;
     }
@@ -4535,7 +4542,7 @@ a#playVid i {
 
 .page-head h1 {
     font-size: 60px;
-    margin: 6% 0 10px;
+    margin: -7px 0 10px;
     color: #fff;
 }
 
