@@ -3074,6 +3074,9 @@ ul.vertical-images li:hover .button {
 }
 
 @media screen and (max-width: 600px) {
+    .container {
+        padding: 0 !important;
+    }
     .singleSlider {
         display: block;
     }
@@ -4519,7 +4522,7 @@ a#playVid i {
 
 .page-head h1 {
     font-size: 60px;
-    margin: -7px 0 10px;
+    margin: 6% 0 10px;
     color: #fff;
 }
 
