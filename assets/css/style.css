@@ -1740,6 +1740,13 @@ header-2 >.container {
     background-color: transparent;
 }
 
+.top-bar li {
+    color: #FFB600 !important;
+}
+.top-bar li a {
+    color: #FFB600 !important;
+}
+
 .header-5 .tb-right ul li,
 .header-5 .tb-right ul li a {
     color: #fff;
