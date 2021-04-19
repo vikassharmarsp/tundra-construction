@@ -1809,6 +1809,12 @@ header-2 >.container {
     transition: all .3s;
 }
 
+.header-5 h3 {
+    color: #FFB600 !important;
+    font-weight: 700 !important;
+    font-size: 1.3em !important;
+}
+
 .header-5 .navbar-brand:after {
     content: '';
     display: block;
