@@ -2203,6 +2203,10 @@ ul.vertical-images li:hover .button {
     border-radius: 12px;
 }
 
+.VeteranSection {
+    display: none;
+}
+
 .home-about {
     padding: 100px 0;
     background-color: white;
@@ -3098,6 +3102,9 @@ ul.vertical-images li:hover .button {
     display: none;
 }
     .singleSlider {
+        display: block;
+    }
+    .VeteranSection {
         display: block;
     }
     .slider {
