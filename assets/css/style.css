@@ -2729,7 +2729,7 @@ ul.vertical-images li:hover .button {
 
 .overlay-wrap .container {
     position: relative;
-    z-index: 55;
+    z-index: 5;
 }
 
 .darna-button {
