@@ -4550,13 +4550,13 @@ a#playVid i {
 }
 
 .contact-info i {
-    font-size: 32px;
+    font-size: 2em;
     line-height: 110px;
     color: #FFF;
     height: 110px;
     width: 110px;
     border-radius: 50%;
-    background-color: #222;
+    background-color: #ffb600;
     margin: 0 auto;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -4573,6 +4573,8 @@ a#playVid i {
 
 .contact-info h3 a {
     color: #222;
+    font-size: 1.2em;
+    font-weight: 600;
 }
 
 .contact-info p {
@@ -4592,13 +4594,14 @@ a#playVid i {
 .contact-form form input,
 .contact-form form textarea {
     padding: 0px 20px;
-    font-size: 14px;
-    color: #8F8F8F;
+    font-size: 1em;
+    color: #000;
     width: 100%;
-    height: 40px;
+    height: 60px;
     line-height: 1;
     background-color: #FFF;
-    border: 1px solid #EEE;
+    border: 2px solid #ffb600;
+    border-radius: 4px;
     -webkit-transition: all 0.2s ease 0s;
     transition: all 0.2s ease 0s;
     margin-bottom: 30px;
