@@ -7711,11 +7711,11 @@ footer {
 .footer-widget {}
 
 .footer-widget h5 {
-    /* font-family: Lato; */
-    font-size: 16px;
-    font-weight: 400;
+    font-family: Lato;
+    font-size: 2em;
+    font-weight: 600;
     letter-spacing: 0.02em;
-    color: #FFF;
+    color: #ffb600;
     margin: 0 0 24px;
 }
 
@@ -7724,8 +7724,8 @@ footer {
 }
 
 .footer-contact {
-    color: #8F8F8F;
-    font-size: 14px;
+    color: #FFFF;
+    font-size: 1.5em;
 }
 
 .footer-contact li {
@@ -7772,8 +7772,8 @@ footer {
 }
 
 .footer-menu li a {
-    color: #8F8F8F;
-    font-size: 12px;
+    color: #FFFF;
+    font-size: 1.2em;
     line-height: 42px;
 }
 
@@ -7784,10 +7784,11 @@ footer {
 }
 
 .footer-copyright p {
-    color: #8F8F8F;
-    font-size: 12px;
+    color: #FFFF;
+    font-size: 1em;
     padding: 7px 0 0;
     margin: 0;
+    font-weight: 500;
 }
 
 .footer-copyright p a {
