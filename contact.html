@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <!-- Meta -->
     <meta charset="utf-8">
@@ -26,21 +27,75 @@
             color: #FFB600;
             font-weight: 600;
         }
+
         .btn {
             font-size: 1.2em;
             background-color: #FFB600;
             border: 3px solid transparent;
             border-radius: 6px;
         }
+
         label {
             font-weight: 500;
             font-size: 1.5em;
             color: #000000ad;
         }
+
+        .modal {
+            opacity: 1;
+        }
+
+        .modal-content {
+            width: 100%;
+            border-radius: 12px;
+            border: 6px solid #FFB600;
+        }
+
+        .modal-header h2 {
+            text-align: center;
+            color: white;
+            font-family: 'Lato';
+        }
+
+        .modal-body h4 {
+            font-family: 'Lato';
+            font-weight: 600;
+            font-size: 2em;
+            text-align: justify;
+            color: white;
+        }
     </style>
+    <!-- jquery -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+        function getUrlVars() {
+            var vars = [], hash;
+            var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            for (var i = 0; i < hashes.length; i++) {
+                hash = hashes[i].split('=');
+                vars.push(hash[0]);
+                vars[hash[0]] = hash[1];
+            }
+            console.log(vars.msg);
+            if (vars.msg === 'success') {
+                document.getElementById("success").style.display = 'block';
+                setTimeout(() => {
+                    document.getElementById("success").style.display = 'none';
+                }, 4000);
+            }
+            if (vars.msg === 'failed') {
+                document.getElementById("failed").style.display = 'block';
+                setTimeout(() => {
+                    document.getElementById("failed").style.display = 'none';
+                }, 4000);
+            }
+        }
+    </script>
 </head>
 
-<body>
+<body onload="getUrlVars()">
     <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
          PRELOADER STARTS
          -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
@@ -57,7 +112,7 @@
             <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
              TOPBAR START
              -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
-             <div class="top-bar">
+            <div class="top-bar">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-9 tb-right">
@@ -91,7 +146,7 @@
                       -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
                 <a class="navbar-brand" href="index.html">
                     <img src="assets/images/logo1.png" alt="" style="width: 100%; margin-top: 5%;"></a>
-                    <h3>Veteran Owned Business</h3>
+                <h3>Veteran Owned Business</h3>
                 <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                       LOGO END
                       -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
@@ -117,6 +172,37 @@
                 -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
         </div>
     </header>
+    <!-- Moal Popups Starts -->
+    <div class="modal fade" id="success" role="dialog">
+        <div class="modal-dialog" style="top:40%; width: 80%;">
+            <!-- Modal content-->
+            <div class="modal-content" style="background-color: #3db923;">
+                <div class="modal-header">
+                    <h2 class="modal-title" style="text-align: center;">Success</h2>
+                </div>
+                <div class="modal-body">
+                    <h4>Thanks for contacting us. E-mail is Sent Successfully! We will get back to you as soon as
+                        possible.</h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal fade" id="failed" role="dialog">
+        <div class="modal-dialog" style="top:40%; width: 80%;">
+            <!-- Modal content-->
+            <div class="modal-content" style="background-color: #cc0e0e;">
+                <div class="modal-header">
+                    <h2 class="modal-title" style="text-align: center;">Failed</h2>
+                </div>
+                <div class="modal-body">
+                    <h4>Error! Your E-mail is not sent please check your internet connection and TRY AGAIN.</h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Moal Popups Ends -->
 
     <div class="page-head overlay-wrap">
         <div class="overlay">
@@ -161,39 +247,42 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="contact-form">
                 <h1>Contact us</h1> <br />
-                <form action="/mailServer/contact.php" method="post" role="form" style="font-size: 1.8rem; color: black;">
+                <form action="/mailServer/contact.php" method="post" role="form"
+                    style="font-size: 1.8rem; color: black;">
                     <div class="row">
                         <div class="col-md-4 col-sm-12">
                             <div class="form-group">
                                 <label>Name</label>
-                            <input class="form-control" name="name" id="name" placeholder="Enter Your Name" type="text" required>
+                                <input class="form-control" name="name" id="name" placeholder="Enter Your Name"
+                                    type="text" required>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-12">
                             <div class="form-group">
                                 <label>Email</label>
-                                <input class="form-control" name="email" id="email" 
-                                placeholder="example@domain.com" type="email" required>
+                                <input class="form-control" name="email" id="email" placeholder="example@domain.com"
+                                    type="email" required>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-12">
                             <div class="form-group">
                                 <label>Subject</label>
-                                <input class="form-control" name="subject" id="subject" 
-                                placeholder="e-Mail Subject" required>
+                                <input class="form-control" name="subject" id="subject" placeholder="e-Mail Subject"
+                                    required>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <label>Message</label>
-                        <textarea class="form-control" name="message" id="message" placeholder="Type In Your Query" rows="8" required></textarea>
+                        <textarea class="form-control" name="message" id="message" placeholder="Type In Your Query"
+                            rows="8" required></textarea>
                     </div>
                     <div><br>
-                    <button class="btn btn-primary" type="submit">Send Message</button> 
+                        <button class="btn btn-primary" type="submit">Send Message</button>
                     </div>
                 </form>
-            </div><!-- Contact form end -->	
-        </div> <!-- Col end -->   
+            </div><!-- Contact form end -->
+        </div> <!-- Col end -->
     </div>
 
     <footer class="overlay-wrap">
@@ -231,9 +320,12 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="footer-widget">
                         <h5>Follow US</h5>
-                        <a href="https://www.facebook.com/TundraConstructionDFW" target="_blank"><img src="./assets/images/svg/facebook.svg" style="width: 20%;" /></a>
-                        <a href="#" target="_blank"><img src="./assets/images/svg/instagram.svg" style="width: 20%;" /></a>
-                        <a href="#" target="_blank"><img src="./assets/images/svg/linkedin.svg" style="width: 20%;" /></a>
+                        <a href="https://www.facebook.com/TundraConstructionDFW" target="_blank"><img
+                                src="./assets/images/svg/facebook.svg" style="width: 20%;" /></a>
+                        <a href="#" target="_blank"><img src="./assets/images/svg/instagram.svg"
+                                style="width: 20%;" /></a>
+                        <a href="#" target="_blank"><img src="./assets/images/svg/linkedin.svg"
+                                style="width: 20%;" /></a>
                     </div>
                 </div>
                 <!-- <div class="col-md-3 col-sm-6">
@@ -284,21 +376,17 @@ overlay div start
     <!-- -- -- -- -
 overlay div end
 -- -- -- -- -->
-     <!-- jquery -->
-     <script src="assets/js/jquery.js"></script>
-     <!-- bootstrap -->
-     <script src="assets/js/bootstrap.min.js"></script>   
- 
-     <!-- cookie js -->
-     <script src="assets/js/jquery.cookie.js"></script>
-     <!-- pretty Photo -->
-     <script src="assets/js/pp/js/jquery.prettyPhoto.js"></script>
- 
-     <!-- jquery-ui.min -->
-     <script src="assets/js/jquery-ui.min.js"></script>
-     
-     <!-- Main Javascript -->
-     <script src="assets/js/main.js"></script>
+
+    <!-- cookie js -->
+    <script src="assets/js/jquery.cookie.js"></script>
+    <!-- pretty Photo -->
+    <script src="assets/js/pp/js/jquery.prettyPhoto.js"></script>
+
+    <!-- jquery-ui.min -->
+    <script src="assets/js/jquery-ui.min.js"></script>
+
+    <!-- Main Javascript -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

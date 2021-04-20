@@ -21,14 +21,14 @@ if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message']
     $sent = mail($email_to, $subject, $msg, $headers) ; 
 
     if($sent) {
-        header("location: https://tundraconstructionllc.com");
+        header("location: http://www.tundraconstructionllc.com/contact?msg=success");
         exit();
     } else {
-        header("location: https://tundraconstructionllc.com/contact.html");
+        header("location: http://www.tundraconstructionllc.com/contact?msg=failed");
         exit();
     }
 }else{
-    header("location: https://tundraconstructionllc.com/about.html");
+    header("location: http://www.tundraconstructionllc.com/contact?msg=failed");
     exit();
 }
 ?>
