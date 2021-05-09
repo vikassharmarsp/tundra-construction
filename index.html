@@ -7,7 +7,7 @@
     <meta content="HTML5 Template" name="keywords" />
     <meta content="" name="description">
     <meta content="" name="author">
-    <title>Tundra Constructions LLC - One Stop Shop for your home furnishing needs</title>
+    <title>Tundra Constructions LLC - One Stop Shop for your Home Improvement Needs</title>
     <!-- Mobile Metas -->
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <!-- Favicon -->
@@ -252,23 +252,27 @@
     <!-- SingleImage Landing Page Starts -->
     <div class="singleSlider">
         <div class="container-fluid">
-            <img src="./assets/images/revslider/slider-04.jpg" style="max-width: 100%;" />
-            <!-- <div class="singleSliderText"><i class="fa fa-phone" style="font-size: 1em;"></i> +1 972-806-0587</div> -->
+            <img src="./assets/images/revslider/slider-03.jpeg" style="max-width: 100%;" />
+            <div class="singleSliderPhoneText"> +1 972-806-0587</div>
+            <div class="singleSliderMailText"> info@tundraconstructionllc.com</div>
+            <!-- <img src="./assets/images/revslider/slider-03.jpeg" style="max-width: 100%; margin-top: 3%; border: 15px solid #FFB600;" />
+            <img src="./assets/images/revslider/slider-01.jpeg" style="max-width: 100%; margin-top: 3%; margin-bottom: 3%; border: 15px solid #FFB600;" /> -->
+            
         </div>
     </div>
     <!-- SingleImage Landing Page Starts Ends -->
-    <!-- SingleImage Landing Page Starts -->
+    <!-- VeteranSection Starts -->
     <div class="VeteranSection">
         <div class="container-fluid">
             <img src="./assets/images/svg/veteran.jpg" style="max-width: 100%;" />
         </div>
     </div>
-    <!-- SingleImage Landing Page Starts Ends -->
+    <!-- VeteranSection Ends -->
     <div class="home-features-side margin-bottom-100">
         <div class="container">
             <div class="content-head text-uppercase text-center">
                 <h4>What we offer</h4>
-                <h5>We are Licensed, Bonded and Insured</h5>
+                <h5 style="font-size: 1.4em; color: #FFB600; font-weight: 600;">Licensed, Bonded and Insured</h5>
             </div>
             <div class="row">
                 <div class="col-md-4 hidden-sm hidden-xs">
@@ -328,25 +332,6 @@
             </div>
             <div class="row" style="text-align: center;">
                 <img src="./assets/images/partners/abc_logo_insite.png" />
-                <!-- <div id="service-box3" class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="s3-box text-center"> <span class="s3-box-ico"><i class="fa fa-cog"
-                                    aria-hidden="true"></i>
-                            </span>
-                            <h3 class="text-uppercase"><a href="#">Work</a></h3>
-                            <p>Temporibus autem quibusdam et aut officiis debitis is aut necessitatibus saepe eveniet ut
-                                et seo lage voluptates sint et molestiae non mes</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="s3-box text-center"> <span class="s3-box-ico"><i class="fa fa-suitcase"></i>
-                            </span>
-                            <h3 class="text-uppercase"><a href="#">Business</a></h3>
-                            <p>Temporibus autem quibusdam et aut officiis debitis is aut necessitatibus saepe eveniet ut
-                                et seo lage voluptates sint et molestiae non mes</p>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
@@ -391,6 +376,8 @@
                                 style="width: 20%;" /></a>
                         <a href="#" target="_blank"><img src="./assets/images/svg/linkedin.svg"
                                 style="width: 20%;" /></a>
+                        <a href="https://g.page/r/CVaENMP6nNMiEAE" target="_blank"><img src="./assets/images/svg/google.svg"
+                                style="width: 20%;" /></a>
                     </div>
                 </div>
                 <!-- <div class="col-md-3 col-sm-6">
@@ -427,6 +414,31 @@
             </div>
         </div>
     </footer>
+
+   <!-- Messenger Chat Plugin Code -->
+   <div id="fb-root"></div>
+   <script>
+     window.fbAsyncInit = function() {
+       FB.init({
+         xfbml            : true,
+         version          : 'v10.0'
+       });
+     };
+
+     (function(d, s, id) {
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) return;
+       js = d.createElement(s); js.id = id;
+       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+   </script>
+
+   <!-- Your Chat Plugin code -->
+   <div class="fb-customerchat"
+     attribution="page_inbox"
+     page_id="105872948293593">
+   </div> 
     <!-- -- -- -- -
 back-to-top start
 -- -- -- -- -->
@@ -590,7 +602,7 @@ overlay div end
     <!-- Main Javascript -->
     <!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
     <script src="assets/js/jquery.style.switcher.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.min.js"></script>
 </body>
 
 </html>
