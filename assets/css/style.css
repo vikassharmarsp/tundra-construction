@@ -976,7 +976,7 @@ header .collapse.in {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #FFB600;
+    color: #ff2a70;
     font-size: 36px;
     position: relative;
     /* right: 29px;*/
@@ -1037,7 +1037,7 @@ header .collapse.in {
 
 header .navbar.easy-sidebar .burger-menu:before,
 header.header-4 .navbar.easy-sidebar .burger-menu:before {
-    color: #FFB600;
+    color: #ff2a70;
 }
 
 header.header-2 .navbar.easy-sidebar .burger-menu:before,
@@ -1750,11 +1750,11 @@ header-2>.container {
 }
 
 .top-bar li {
-    color: #FFB600 !important;
+    color: #ff2a70 !important;
 }
 
 .top-bar li a {
-    color: #FFB600 !important;
+    color: #ff2a70 !important;
 }
 
 .header-5 .tb-right ul li,
@@ -1820,7 +1820,7 @@ header-2>.container {
 }
 
 .header-5 h3 {
-    color: #FFB600 !important;
+    color: #ff2a70 !important;
     font-weight: 600 !important;
     font-size: 1.3em !important;
 }
@@ -2975,6 +2975,7 @@ ul.vertical-images li:hover .button {
 .project-item {
     position: relative;
     overflow: hidden;
+    max-height: 350px;
 }
 
 .project-item img {
@@ -4131,7 +4132,6 @@ ul.vertical-images li:hover .button {
 
 .folio-filter-wrap {
     background: #f4f4f4;
-    height: 44px;
     margin: 6px auto 30px;
 }
 
@@ -4638,7 +4638,7 @@ a#playVid i {
     height: 110px;
     width: 110px;
     border-radius: 50%;
-    background-color: #ffb600;
+    background-color: #ff2a70;
     margin: 0 auto;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -4682,7 +4682,7 @@ a#playVid i {
     height: 60px;
     line-height: 1;
     background-color: #FFF;
-    border: 2px solid #ffb600;
+    border: 2px solid #ff2a70;
     border-radius: 4px;
     -webkit-transition: all 0.2s ease 0s;
     transition: all 0.2s ease 0s;
@@ -4840,7 +4840,7 @@ a#playVid i {
 /* -----------------------------------------------------------------------------PORTOFOLIO AND HOME PROCESS ------------------ */
 
 .portfolio-wrap-main {
-    padding: 100px 0 90px;
+    padding: 10px 0 90px;
 }
 
 .portfolio-grid-4col .folio-item {
@@ -7604,10 +7604,10 @@ a.back-to-top:active {
     transform: translateX(0px);
     -webkit-transition: all .2s ease-out;
     transition: all .2s ease-out;
-    border: 2px solid #ffb600;
+    border: 2px solid #ff2a70;
     border-radius: 12px;
     color: #fff;
-    background-color: #ffb600;
+    background-color: #ff2a70;
     display: none;
 }
 
@@ -7807,7 +7807,7 @@ footer {
     font-size: 2em;
     font-weight: 600;
     letter-spacing: 0.02em;
-    color: #ffb600;
+    color: #ff2a70;
     margin: 0 0 24px;
 }
 

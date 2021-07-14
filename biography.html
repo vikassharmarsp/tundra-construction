@@ -23,79 +23,30 @@
     <!-- Main CSS -->
     <link href="assets/css/style.css" media="screen" rel="stylesheet" type="text/css">
     <style>
-        h1 {
-            color: #ff2a70;
-            font-weight: 600;
+        #more {
+            display: none;
         }
 
-        .btn {
-            font-size: 1.2em;
+        .button {
             background-color: #ff2a70;
-            border: 3px solid transparent;
-            border-radius: 6px;
-        }
-
-        label {
-            font-weight: 500;
-            font-size: 1.5em;
-            color: #000000ad;
-        }
-
-        .modal {
-            opacity: 1;
-        }
-
-        .modal-content {
-            width: 100%;
-            border-radius: 12px;
-            border: 6px solid #ff2a70;
-        }
-
-        .modal-header h2 {
+            border: none;
+            color: rgb(252, 249, 249);
+            padding: 10px 20px;
             text-align: center;
-            color: white;
-            font-family: 'Lato';
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 16px;
         }
 
-        .modal-body h4 {
-            font-family: 'Lato';
-            font-weight: 600;
-            font-size: 2em;
-            text-align: justify;
-            color: white;
+        .button:hover {
+            background-color: #a11242;
         }
     </style>
-    <!-- jquery -->
-    <script src="assets/js/jquery.js"></script>
-    <!-- bootstrap -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script>
-        function getUrlVars() {
-            var vars = [], hash;
-            var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-            for (var i = 0; i < hashes.length; i++) {
-                hash = hashes[i].split('=');
-                vars.push(hash[0]);
-                vars[hash[0]] = hash[1];
-            }
-            console.log(vars.msg);
-            if (vars.msg === 'success') {
-                document.getElementById("success").style.display = 'block';
-                setTimeout(() => {
-                    document.getElementById("success").style.display = 'none';
-                }, 4000);
-            }
-            if (vars.msg === 'failed') {
-                document.getElementById("failed").style.display = 'block';
-                setTimeout(() => {
-                    document.getElementById("failed").style.display = 'none';
-                }, 4000);
-            }
-        }
-    </script>
 </head>
 
-<body onload="getUrlVars()">
+<body>
     <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
          PRELOADER STARTS
          -- -- -- - -- -- -- - -- -- -- - -- -- -- -- -->
@@ -137,6 +88,7 @@
                             <li><a href="biography.html">Biography</a></li>
                             <li><a href="events.html">Events</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
+
 
                             <!-- -- -- - -- -- -- - -- -- -- - -- -- -- -- -
                                    MENU HOME END
@@ -225,119 +177,98 @@
                     ========================================================================= -->
         </div>
     </header>
-    <!-- Moal Popups Starts -->
-    <div class="modal fade" id="success" role="dialog">
-        <div class="modal-dialog" style="top:40%; width: 80%;">
-            <!-- Modal content-->
-            <div class="modal-content" style="background-color: #3db923;">
-                <div class="modal-header">
-                    <h2 class="modal-title" style="text-align: center;">Success</h2>
-                </div>
-                <div class="modal-body">
-                    <h4>Thanks for contacting us. E-mail is Sent Successfully! We will get back to you as soon as
-                        possible.</h4>
-                </div>
+    <!-- SLIDER START -->
+    <!-- <div class="container-fluid">
+            <div class="row">
+                <ul>
+                    <li> <img src="assets/images/bg/header_bg_1.png" alt="" data-bgposition="center center"
+                            data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina width="100%">
+                    </li>
+    
+                </ul>
             </div>
-
-        </div>
-    </div>
-    <div class="modal fade" id="failed" role="dialog">
-        <div class="modal-dialog" style="top:40%; width: 80%;">
-            <!-- Modal content-->
-            <div class="modal-content" style="background-color: #cc0e0e;">
-                <div class="modal-header">
-                    <h2 class="modal-title" style="text-align: center;">Failed</h2>
-                </div>
-                <div class="modal-body">
-                    <h4>Error! Your E-mail is not sent please check your internet connection and TRY AGAIN.</h4>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!-- Moal Popups Ends -->
+        </div> -->
 
     <div class="page-head overlay-wrap">
         <div class="overlay">
 
         </div>
         <div class="container text-uppercase" style="padding-top: 5%;">
-            <h1>Get in touch</h1>
+            <h1>Biography</h1>
             <ul class="bcrumbs">
                 <li><a href="#"><i class="fa fa-home"></i></a></li>
-                <li>Contact Us</li>
+                <li>Biography</li>
             </ul>
         </div>
     </div>
-    <div class="contact-info">
+
+    <div class="home-profile">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <div class="text-center"> <i class="fa fa-road"></i>
-                        <h3><a href="#">Address</a></h3>
-                        <h5>539 W Commerce St, Suite 5161 Dallas, TX-75208
-                            <br> USA
-                        </h5>
-                    </div>
+                <div class="col-lg-5 col-sm-5 col-xs-12">
+                    <div class="img-border"><img src="assets/images/bg/bio.png" class="img-responsive" alt=""
+                            width="100%"></div>
                 </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="text-center"> <i class="fa fa-phone"></i>
-                        <h3><a href="#">Phone Numbers</a></h3>
-                        <h5>+1 972-806-0587</h5>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="text-center"> <i class="fa fa-envelope"></i>
-                        <h3><a href="#">e-mail</a></h3>
-                        <h5>info@tundraconstructionllc.com
-                        </h5>
-                    </div>
+                <div class="col-lg-7 col-sm-7 col-xs-12">
+                    <h3><i class="fa fa-suitcase"></i> <a href="#">Biography</a></h3>
+                    <p>
+                        From small towns in Southern Illinois to Nashville, Tennessee it has been quite a journey for
+                        singer
+                        songwriter J Raleigh Jones. Friends call him by his initials, J R.
+                    </p>
+                    <p>
+                        His interest in songwriting was first expressed when at the age of 9 years old he asked his
+                        mother
+                        how to write a song. This occurred at the same time he was learning to play guitar from his
+                        father
+                        and family musicians. The influence of his family of musicians has stayed in his life.
+                    </p>
+                    <p>
+                        J R had no aspirations beyond playing at church until he was an adult. Still, there was no
+                        apparent
+                        interest in playing with a band and playing gigs until facing divorce and personal problems. At
+                        this
+                        point J R took refuge in his music and decided he would do something for himself. That something
+                        was
+                        to write songs, rehearse up and join a band in Central Illinois where he had relocated.
+                        Eventually,
+                        J R formed his own band “Change Of Heart” and developed an interest in pursuing his craft in
+                        Nashville. <span id="dots">...</span><span id="more">He was not interested in touring nationally
+                            but
+                            did record his first album in Nashville
+                            and gigged on a regional level. This continued in Central Illinois until he relocated to the
+                            Gulf
+                            Coast of Mississippi in the year 2000. J R became more involved in Nashville recording and
+                            put
+                            together a band. For more information on J R's music check out Discography on this
+                            website.In
+                            2008,
+                            3 years after Hurricane Katrina, he relocated to Nashville. He performed at many writers
+                            showcases
+                            in Nashville and made writer and musician friends. J R discovered the local NECAT Television
+                            Network
+                            in Nashville and began producing his own TV shows in 2013. After 6 years J R and his brother
+                            Stan
+                            formed the Nashville Country Television Network which is now live on ROKU, Amazon Fire TV,
+                            and
+                            Android TV world wide. The network provides media access to the pool of great talent in
+                            Nashville
+                            that deserves to be discovered by the world. The new J Raleigh Jones Show is now in
+                            production
+                            with
+                            a scheduled launch in August 2021. His new variety show is based on his roots in Traditional
+                            Country
+                            Music. The Nashville Country Television Network has quite a variety of great entertainment
+                            of
+                            various genres and subjects. Check it out a http://nctvn.com
+                        </span></p>
+                    <button class="button" onclick="myFunction()" id="myBtn">Read more</button>
+
+
                 </div>
             </div>
         </div>
     </div>
-    <div class="container" style="background-color:#f8f8f8;">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="contact-form">
-                <h1>Contact us</h1> <br />
-                <form action="/mailServer/contact.php" method="post" role="form"
-                    style="font-size: 1.8rem; color: black;">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12">
-                            <div class="form-group">
-                                <label>Name</label>
-                                <input class="form-control" name="name" id="name" placeholder="Enter Your Name"
-                                    type="text" required>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="form-group">
-                                <label>Email</label>
-                                <input class="form-control" name="email" id="email" placeholder="example@domain.com"
-                                    type="email" required>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="form-group">
-                                <label>Subject</label>
-                                <input class="form-control" name="subject" id="subject" placeholder="e-Mail Subject"
-                                    required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Message</label>
-                        <textarea class="form-control" name="message" id="message" placeholder="Type In Your Query"
-                            rows="8" required></textarea>
-                    </div>
-                    <div><br>
-                        <button class="btn btn-primary" type="submit">Send Message</button>
-                    </div>
-                </form>
-            </div><!-- Contact form end -->
-        </div> <!-- Col end -->
-    </div>
-
     <footer class="overlay-wrap">
         <div class="overlay"> </div>
         <div class="container">
@@ -372,7 +303,8 @@
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="footer-widget">
-                        <h5>Follow US</h5><a href="https://www.facebook.com/TundraConstructionDFW" target="_blank"><img
+                        <h5>Follow US</h5>
+                        <a href="https://www.facebook.com/TundraConstructionDFW" target="_blank"><img
                                 src="./assets/images/svg/facebook.svg" style="width: 20%;" /></a>
                         <a href="https://g.page/r/CVaENMP6nNMiEAE" target="_blank"><img
                                 src="./assets/images/svg/google.svg" style="width: 20%;" /></a>
@@ -383,29 +315,16 @@
 
                     </div>
                 </div>
-                <!-- <div class="col-md-3 col-sm-6">
-                    <div class="footer-widget">
-                        <h5>Mailing List</h5>
-                        <div class="footer-newsletter">
-                            <p>Enter your email address for our mailing list to keep your self our lastest updated.</p>
-                            <form>
-                                <input placeholder="Email Address" required="" type="email">
-                                <button type="submit"><i class="fa fa-paper-plane">
-                                    </i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div> -->
             </div>
             <div class="footer-copyright">
                 <div class="row">
                     <div class="col-md-6">
                         <ul class="footer-menu list-inline text-uppercase">
                             <li><a href="index">Home</a></li>
-                            <li><a href="about">About Us</a></li>
+                            <li class="active"><a href="about">About Us</a></li>
                             <li><a href="services">Services</a></li>
                             <li><a href="gallery">Gallery</a></li>
-                            <li class="active"><a href="contact">Contact Us</a></li>
+                            <li><a href="contact">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="col-md-6">
@@ -417,20 +336,16 @@
             </div>
         </div>
     </footer>
-    <!-- -- -- -- -
-back-to-top start
--- -- -- -- -->
+    <!-- -- -- -- - back-to-top start -- -- -- -- -->
     <a class="back-to-top" href=".html"> <i aria-hidden="true" class="fa fa-chevron-up"></i></a>
-    <!-- -- -- -- -
-back-to-top end
--- -- -- -- -->
-    <!-- -- -- -- -
-overlay div start
--- -- -- -- -->
+    <!-- -- -- -- - back-to-top end -- -- -- -- -->
+    <!-- -- -- -- - overlay div start -- -- -- -- -->
     <div class="overlay hided"></div>
-    <!-- -- -- -- -
-overlay div end
--- -- -- -- -->
+    <!-- -- -- -- - overlay div end -- -- -- -- -->
+    <!-- jquery -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
 
     <!-- cookie js -->
     <script src="assets/js/jquery.cookie.js"></script>
@@ -439,7 +354,25 @@ overlay div end
 
     <!-- jquery-ui.min -->
     <script src="assets/js/jquery-ui.min.js"></script>
+    <!-- fRead more Read less script -->
 
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
     <!-- Main Javascript -->
     <script src="assets/js/main.min.js"></script>
 </body>
